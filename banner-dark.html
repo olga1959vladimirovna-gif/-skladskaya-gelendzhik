@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Складская Геленджик — Тёмный баннер</title>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#07101f;display:flex;justify-content:center;padding:20px 0 40px;min-height:100vh}
+.wrap{font-family:'Nunito',sans-serif;background:#07101f;border-radius:16px;overflow:hidden;width:100%;max-width:480px}
+.hero{background:#0a1628;position:relative;padding:0;overflow:hidden}
+.hero-stripe{background:#d63031;height:6px;width:100%}
+.hero-inner{padding:22px 20px 18px;position:relative;z-index:2;text-align:center}
+.deco{position:absolute;right:-10px;top:10px;opacity:0.07;z-index:1}
+.city-tag{display:inline-flex;align-items:center;gap:6px;background:#e8c840;color:#0a1628;font-family:'Russo One',sans-serif;font-size:10px;letter-spacing:2.5px;padding:4px 14px;border-radius:20px;margin-bottom:12px}
+.hero-title{font-family:'Russo One',sans-serif;font-size:30px;line-height:1.05;color:#fff;margin-bottom:4px;text-align:center}
+.hero-title .accent{color:#e8c840;display:block}
+.hero-sub{font-size:12px;color:#a0b4d0;letter-spacing:0.5px;margin-bottom:14px}
+.live-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(46,204,113,0.12);border:1px solid rgba(46,204,113,0.3);border-radius:20px;padding:5px 14px;font-size:12px;color:#2ecc71;font-weight:700}
+.pulse{width:7px;height:7px;background:#2ecc71;border-radius:50%;animation:blink 1.4s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.services-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:2px solid #1a3a6b;border-bottom:2px solid #1a3a6b}
+.svc{padding:12px 8px;text-align:center;background:#0d1e38;position:relative}
+.svc:not(:last-child){border-right:1px solid #1a3a6b}
+.svc-icon{font-size:32px;margin-bottom:5px;display:block}
+.svc-name{font-family:'Russo One',sans-serif;font-size:10px;color:#e8c840;letter-spacing:0.5px;display:block}
+.svc-desc{font-size:9px;color:#6a8aaa;margin-top:2px;display:block;line-height:1.4}
+.cards{padding:14px 14px 8px;display:flex;flex-direction:column;gap:10px}
+.card{background:#0d1e38;border-radius:12px;border:1px solid #1a3a6b;overflow:hidden;display:flex;align-items:stretch}
+.card-accent{width:4px;flex-shrink:0}
+.card-body{padding:12px 14px;flex:1}
+.card-top{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.card-ico{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
+.card-title{font-family:'Russo One',sans-serif;font-size:14px;color:#fff;line-height:1.2}
+.card-title small{font-family:'Nunito',sans-serif;font-size:10px;font-weight:400;color:#6a8aaa;display:block;margin-top:1px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{background:rgba(255,255,255,0.06);border:0.5px solid rgba(255,255,255,0.1);border-radius:5px;padding:3px 8px;font-size:10px;color:#a0b4d0}
+.tag-hi{background:rgba(232,200,64,0.1);border-color:rgba(232,200,64,0.25);color:#e8c840}
+.specs-row{display:flex;gap:6px;margin-top:8px}
+.spec{background:rgba(0,0,0,0.25);border-radius:7px;padding:5px 8px;font-size:10px;color:#6a8aaa;text-align:center;flex:1}
+.spec b{display:block;font-size:13px;color:#e8c840;font-weight:800;margin-bottom:1px}
+.divider{height:1px;background:#1a3a6b;margin:4px 14px}
+.cta{padding:12px 14px 14px}
+.phones-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.phone-box{background:#0d1e38;border:1px solid #1a3a6b;border-radius:10px;padding:9px 10px;text-align:center}
+.phone-box span{display:block;font-size:9px;color:#6a8aaa;margin-bottom:3px;letter-spacing:0.5px}
+.phone-box a{color:#e8c840;font-weight:800;font-size:12px;text-decoration:none}
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:13px;border-radius:11px;font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;text-decoration:none;margin-bottom:8px;transition:opacity .2s,transform .15s;border:none;cursor:pointer}
+.btn:active{transform:scale(0.97)}
+.btn svg{width:20px;height:20px;flex-shrink:0}
+.btn-call{background:#d63031;color:#fff}
+.btn-wa{background:#25d366;color:#fff}
+.btn:hover{opacity:.88}
+.addr{display:flex;gap:10px;align-items:flex-start;background:#0d1e38;border:1px solid #1a3a6b;border-radius:10px;padding:11px 13px}
+.addr-pin{font-size:20px;flex-shrink:0;margin-top:1px}
+.addr-text{font-size:11px;color:#6a8aaa;line-height:1.6}
+.addr-text strong{color:#c8d8ea;font-size:12px;display:block;margin-bottom:1px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <svg class="deco" width="160" height="160" viewBox="0 0 160 160"><rect x="10" y="10" width="60" height="40" rx="4" fill="#e8c840"/><rect x="80" y="10" width="60" height="40" rx="4" fill="#d63031"/><rect x="10" y="60" width="60" height="40" rx="4" fill="#1a3a6b"/><rect x="80" y="60" width="60" height="40" rx="4" fill="#e8c840"/><rect x="10" y="110" width="60" height="40" rx="4" fill="#d63031"/><rect x="80" y="110" width="60" height="40" rx="4" fill="#1a3a6b"/></svg>
+    <div class="hero-stripe"></div>
+    <div class="hero-inner">
+      <div class="city-tag">
+        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M5 0C2.24 0 0 2.24 0 5c0 3.75 5 7 5 7s5-3.25 5-7c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 5 3.5 1.5 1.5 0 0 1 5 6.5z" fill="#0a1628"/></svg>
+        ГЕЛЕНДЖИК
+      </div>
+      <div class="hero-title">СКЛАДСКАЯ<span class="accent">ГРУППА КОМПАНИЙ</span></div>
+      <div class="hero-sub">Склады · Перевозки · Перегон авто</div>
+      <div class="live-badge"><div class="pulse"></div>Работаем 24 / 7</div>
+    </div>
+  </div>
+  <div class="services-strip">
+    <div class="svc"><span class="svc-icon">🏭</span><span class="svc-name">СКЛАДЫ</span><span class="svc-desc">Аренда и хранение</span></div>
+    <div class="svc"><span class="svc-icon">🚚</span><span class="svc-name">ПЕРЕВОЗКИ</span><span class="svc-desc">3 т · 20 м³ · межгород</span></div>
+    <div class="svc"><span class="svc-icon">🚗</span><span class="svc-name">ПЕРЕГОН</span><span class="svc-desc">Любой авто, Россия и СНГ</span></div>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="card-accent" style="background:#1a3a6b"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <div class="card-ico" style="background:rgba(26,90,150,0.25);border:1px solid rgba(26,90,150,0.4)">🏭</div>
+          <div class="card-title">Складская<small>Аренда и хранение · Охрана 24/7</small></div>
+        </div>
+        <div class="tags">
+          <span class="tag">Склады</span><span class="tag">Морские контейнеры</span><span class="tag">Стоянка грузовиков</span><span class="tag">Яхты и катера</span><span class="tag tag-hi">Погрузка / разгрузка</span><span class="tag">Видеонаблюдение</span>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-accent" style="background:#d63031"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <div class="card-ico" style="background:rgba(214,48,49,0.2);border:1px solid rgba(214,48,49,0.35)">🚚</div>
+          <div class="card-title">Грузоперевозки<small>3 тонны · 20 кубов · любые маршруты</small></div>
+        </div>
+        <div class="specs-row">
+          <div class="spec"><b>4,50 м</b>длина</div>
+          <div class="spec"><b>2,10 м</b>высота</div>
+          <div class="spec"><b>2,15 м</b>ширина</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-accent" style="background:#e8c840"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <div class="card-ico" style="background:rgba(232,168,0,0.15);border:1px solid rgba(232,168,0,0.3)">🚗</div>
+          <div class="card-title">Перегон автомобилей<small>Россия и зарубежье · все категории A–E</small></div>
+        </div>
+        <div class="tags">
+          <span class="tag">АКПП / МКПП / робот</span><span class="tag">Лев. / Прав. руль</span><span class="tag tag-hi">VIP и лимузины</span><span class="tag">Тягачи и фуры</span><span class="tag">Спецтехника</span><span class="tag">Банки и лизинг</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="cta">
+    <div class="phones-row">
+      <div class="phone-box"><span>СКЛАД / АВТО</span><a href="tel:+79385556999">8-938-555-6-999</a></div>
+      <div class="phone-box"><span>СКЛАД</span><a href="tel:+79385556444">8-938-555-6-444</a></div>
+    </div>
+    <a class="btn btn-call" href="tel:+79385551117">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Позвонить · 8-938-555-1-117
+    </a>
+    <a class="btn btn-wa" href="https://wa.me/79385551117">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Написать в WhatsApp
+    </a>
+    <div class="addr">
+      <div class="addr-pin">📍</div>
+      <div class="addr-text"><strong>Южная Промышленная Территория, 19</strong>район парка «Римская империя», Геленджик</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
